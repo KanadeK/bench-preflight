@@ -41,5 +41,6 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y libbenchmark-dev
+          mkdir -p build
           g++ -std=c++17 examples/native_benchmark.cpp -lbenchmark -lpthread -o build/native-benchmark
           python examples/native_smoke.py build/native-benchmark
