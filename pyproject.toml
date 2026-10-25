@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bench-preflight"
+version = "0.1.0"
+description = "Validate Google Benchmark captures before comparing their performance."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "KanadeK"}]
+dependencies = []
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.urls]
+Repository = "https://github.com/KanadeK/bench-preflight"
+Issues = "https://github.com/KanadeK/bench-preflight/issues"
+
+[project.scripts]
+bench-preflight = "bench_preflight.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

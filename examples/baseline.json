@@ -1,0 +1,82 @@
+{
+  "context": {
+    "num_cpus": 4,
+    "library_build_type": "release",
+    "compiler": "demo-toolchain",
+    "fixture": "synthetic"
+  },
+  "benchmarks": [
+    {
+      "name": "BM_Sum/8",
+      "run_name": "BM_Sum/8",
+      "run_type": "iteration",
+      "repetitions": 3,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 100,
+      "real_time": 10,
+      "cpu_time": 9,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_Sum/8",
+      "run_name": "BM_Sum/8",
+      "run_type": "iteration",
+      "repetitions": 3,
+      "repetition_index": 1,
+      "threads": 1,
+      "iterations": 100,
+      "real_time": 11,
+      "cpu_time": 10,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_Sum/8",
+      "run_name": "BM_Sum/8",
+      "run_type": "iteration",
+      "repetitions": 3,
+      "repetition_index": 2,
+      "threads": 1,
+      "iterations": 100,
+      "real_time": 12,
+      "cpu_time": 11,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_Sum/64",
+      "run_name": "BM_Sum/64",
+      "run_type": "iteration",
+      "repetitions": 3,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 100,
+      "real_time": 10,
+      "cpu_time": 9,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_Sum/64",
+      "run_name": "BM_Sum/64",
+      "run_type": "iteration",
+      "repetitions": 3,
+      "repetition_index": 1,
+      "threads": 1,
+      "iterations": 100,
+      "real_time": 11,
+      "cpu_time": 10,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_Sum/64",
+      "run_name": "BM_Sum/64",
+      "run_type": "iteration",
+      "repetitions": 3,
+      "repetition_index": 2,
+      "threads": 1,
+      "iterations": 100,
+      "real_time": 12,
+      "cpu_time": 11,
+      "time_unit": "ns"
+    }
+  ]
+}
